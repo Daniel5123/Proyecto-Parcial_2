@@ -2,8 +2,7 @@
 
 Esta aplicaion te ayudara a saber un poco sobre programacion.
 La aplicacion consiste en darte varias pregunas sobre programacion y tu tendras que escoger cual es la correcta.
-
-
+![Bea-Duo---Finger-Guns](https://github.com/Daniel5123/Proyecto-Parcial_2/assets/156048599/831d876a-0142-4f99-8067-c55d63ca8712)
 
 Al no escoger la respuesta correcta, en la parte inferior se mostrara que has fallado en la preguna y te mostrara la correcta.
 
