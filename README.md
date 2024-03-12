@@ -2,8 +2,8 @@
 
 Esta aplicaion te ayudara a saber un poco sobre programacion.
 La aplicacion consiste en darte varias pregunas sobre programacion y tu tendras que escoger cual es la correcta.
-![image](https://github.com/Daniel5123/Proyecto-Parcial_2/assets/156048599/77ff453b-3833-4ce4-93a8-73fadc629946)
 
+![image](https://github.com/Daniel5123/Proyecto-Parcial_2/assets/156048599/77ff453b-3833-4ce4-93a8-73fadc629946)
 
 Al no escoger la respuesta correcta, en la parte inferior se mostrara que has fallado en la preguna y te mostrara la correcta.
 
