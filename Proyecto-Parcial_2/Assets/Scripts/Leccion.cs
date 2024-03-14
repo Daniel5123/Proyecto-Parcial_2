@@ -6,6 +6,7 @@ using UnityEngine;
 
     public class Leccion
     {
+        //Las opciones que da el programa para dar las preguntas
         public int ID;
         public string lessons;
         public List<string> opciones;
