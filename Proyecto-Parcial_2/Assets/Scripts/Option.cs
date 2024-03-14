@@ -11,6 +11,7 @@ public class Option : MonoBehaviour
 
     public void Start()
     {
+        //Se adquiere el nombre del scriptableObject y la opcion de texto
         transform.GetChild(0).GetComponent<TMP_Text>().text = OptionName;
     }
 
@@ -18,9 +19,10 @@ public class Option : MonoBehaviour
     {
         
     }
-
+    //Se actualiza el texto
     public void Updatetext()
     {
+        //Conforme pasen las preguntas se actualiza el texto
         transform.GetChild(0).GetComponent<TMP_Text>().text = OptionName;
     }
     public void SelectOptions()

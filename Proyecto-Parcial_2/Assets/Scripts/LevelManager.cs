@@ -46,12 +46,13 @@ public class LevelManager : MonoBehaviour
     {
         //Establecemos la cantidad de preguntas en la leccion
         questionAmount = Lesson.leccionList.Count;
+        //Se caarga la primera pregunta
         LoadQuestion();
         CheckPlayerState();
     }
 
 
-
+   //Esta funcion se encarga de cargar las preguntas
    private void LoadQuestion()
     {
 
@@ -66,7 +67,7 @@ public class LevelManager : MonoBehaviour
             correctAnswer = currentLesson.opciones[currentLesson.correctAnswer];
             //Pregunta en UI
             Questiontxt.text = question;
-
+            //Se establecen las opciones
             for(int i =0; i < currentLesson.opciones.Count; i++)
             {
                 opciones[i].GetComponent<Option>().OptionName = currentLesson.opciones[i];
@@ -81,22 +82,28 @@ public class LevelManager : MonoBehaviour
             Debug.Log("Fin de las preguntas");
         }
     }
-
+    //Aqui se verifica si las preguntas son correctas o incorrectas
     public void NextQuestion()
     {
+        //Se checa si el playerState esta activo y se presiona el boton de comprobar
         if (CheckPlayerState())
         {
+            //Se verifican las preguntas
             if (currentQuestion < questionAmount)
             {
+                //El bool comprueba la repuesta del jugador
                 bool isCorrect = currentLesson.opciones[CorrectAnswerfromUser] == correctAnswer;
 
                 AnswerContainer.SetActive(true);
+                //Si la respuesta esta correfta pasa por esta funcion
                 if(isCorrect)
                 {
+                    //El boton cambia de color a verde
                     AnswerContainer.GetComponent<Image>().color = Green;
+                    //Escribe un texto diciendo que esta correcto
                     Questiongood.text="Respuesta correcta. " + question + ": " + correctAnswer;
                 }
-                else
+                else //Si esta incorrecta se pasa a esta varaible y define que se equivoco poniendo el boton en rojo
                 {
 
                     AnswerContainer.GetComponent<Image>().color = Red;
